@@ -22,6 +22,22 @@ int main()
 		printf("%4d", num[i]);
 		printf("\n");
 		
+		printf("After sorting :");
+	for (k=1 ; k<=n-1 ; k++)
+		for (j=0 ; j<n-k ; j++)
+		{
+			if(num[j]>num[j+1])
+			{
+				temp = num[j];
+				num[j] = num[j+1];
+				num[j+1] = temp;
+			}
+		}
+	for(i=0 ; i<n ; i++)
+		printf("%4d", num[i]);
+		
+	printf("\n");
+		
 
 	system("PAUSE");
 	return 0;
